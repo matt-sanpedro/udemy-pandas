@@ -33,3 +33,6 @@ print(titanic.head(10))
 
 # tail: last 5 rows by default
 print(titanic.tail(10))
+
+# to generate summary statistics for numerical solutions in dataframe
+print(titanic.describe())
