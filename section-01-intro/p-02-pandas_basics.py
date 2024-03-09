@@ -27,3 +27,6 @@ print(titanic.min(numeric_only=True))
 
 # METHOD CHAINING
 print(titanic.mean(numeric_only=True).sort_values())
+
+# SORTING COLUMNS
+print(titanic.sort_values(by="age"))
