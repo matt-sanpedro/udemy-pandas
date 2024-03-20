@@ -39,3 +39,19 @@ print(summer.iloc[:])
 
 # list with index position that are not neighbors
 print(summer.iloc[[2, 45, 5469]])
+
+# to extract data, can use iloc indexing: .iloc[row, col]
+print("SHAPE: ", summer.shape) # OUTPUT: (31165, 8)
+print(summer.iloc[0])
+print(summer.iloc[31164, 7])
+
+# selecting column indices from row 0
+print(summer.iloc[0, :3])
+print(summer.iloc[0, [0, 2, 5, 7]])
+
+# selecting all rows and specific cols
+print(summer.iloc[:, [0, 2, 3, 7]])
+
+# can use dot notation for pandas methods
+print(summer.iloc[:, 4].equals(summer.Country))     # True
+print(summer.iloc[:, 4].equals(summer["Country"]))  # True
