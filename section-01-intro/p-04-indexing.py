@@ -55,3 +55,9 @@ print(summer.iloc[:, [0, 2, 3, 7]])
 # can use dot notation for pandas methods
 print(summer.iloc[:, 4].equals(summer.Country))     # True
 print(summer.iloc[:, 4].equals(summer["Country"]))  # True
+
+# slice rows and columns
+print(summer.iloc[34:39, [0, 2, 5, 7]])
+
+# select all rows and only column 4
+print(summer.iloc[:, 4])
