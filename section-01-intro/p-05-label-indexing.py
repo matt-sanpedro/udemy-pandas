@@ -12,7 +12,7 @@ print(summer.loc["PHELPS, Michael"])
 print(summer.loc[["PHELPS, Michael", "LEWIS, Carl"], ["Medal", "Event"]])
 
 # select all rows and specific columns
-# print(summer.loc[:, ["Medal", "Event"]])
+print(summer.loc[:, ["Medal", "Event"]])
 
 print(summer.head(10))
 
@@ -20,9 +20,13 @@ print(summer.head(10))
 print(summer.loc[:"CHASAPIS, Spiridon"])
 
 # phelps will throw error since non-unique label (duplicate entries)
+# print(summer.loc[:"PHELPS, Michael"])
 # print(summer.loc["PHELPS, Michael":])
 
-print(summer.loc["DRIVAS, Dimitrios":"BLAKE, Arthur", "City":"Discipline"])
+# print(summer.loc["DRIVAS, Dimitrios":"BLAKE, Arthur", "City":"Discipline"])
 
 # will throw error since ther is no "Age" column
-print(summer.loc["PHELPS, Michael", ["Year", "Age"]])
+# print(summer.loc["PHELPS, Michael", ["Year", "Age"]])
+
+# extracurricular
+print(summer.loc[:, ['Year', 'Event', 'Medal']])
