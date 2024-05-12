@@ -23,7 +23,7 @@ summer.info()
 print(summer.iloc[1])
 
 # check data type
-print(type(summer.iloc[1]))
+print(type(summer.iloc[1])) # pandas series
 
 # negative indexing
 print(summer.iloc[-1])
@@ -43,7 +43,7 @@ print(summer.iloc[[2, 45, 5469]])
 # to extract data, can use iloc indexing: .iloc[row, col]
 print("SHAPE: ", summer.shape) # OUTPUT: (31165, 8)
 print(summer.iloc[0])
-print(summer.iloc[31164, 7])
+print(summer.iloc[31164, 7]) # Bronze
 
 # selecting column indices from row 0
 print(summer.iloc[0, :3])
