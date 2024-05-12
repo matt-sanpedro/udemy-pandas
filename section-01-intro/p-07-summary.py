@@ -4,7 +4,7 @@ import pandas as pd
 summer = pd.read_csv("summer.csv", index_col="Athlete")
 
 print(summer)
-print(summer.info())
+summer.info()
 
 # select one column
 print(summer.Medal)
