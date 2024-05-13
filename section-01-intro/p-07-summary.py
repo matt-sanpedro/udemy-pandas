@@ -14,7 +14,7 @@ print(summer["Medal"])
 print(summer[["Year", "Medal"]])
 print(summer.loc[:, ["Year", "Medal"]])
 
-# select positional rows
+# select positional rows (10 inclusive, 21 exclusive)
 print(summer.iloc[10:21])
 
 # select labeled rows
