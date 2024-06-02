@@ -24,4 +24,5 @@ col = summer.columns[[4, 6]]
 print(col)
 
 print(summer.loc["PHELPS, Michael", col])
+print(summer.loc["PHELPS, Michael", ["Country", "Event"]])
 # print(summer.ix["PHELPS, Michael", [4, 6]]) # deprecated as of pandas 1.0
