@@ -23,3 +23,6 @@ animals.reverse()
 print(animals)
 animals.pop(-1)
 print(animals)
+
+# get three players with highest amount of 2018 goals from dataframe
+print(df.nlargest(3, "Goals_2018"))
