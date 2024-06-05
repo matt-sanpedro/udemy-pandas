@@ -19,9 +19,12 @@ print(athlete.count()) # total non-null values
 
 print(athlete.min()) # returns alphabetically first athlete
 print(athlete.unique())
-print(len(athlete.unique())) # 22762 unique athletes
+print(len(athlete.unique()))             # 22762 unique athletes
 print(athlete.nunique(dropna=False))     # 22762 unique athletes
 
 print(athlete.value_counts())
 print(athlete.value_counts(sort=True, ascending=True))
 print(athlete.value_counts(sort=True, ascending=False, normalize=True))
+
+# get athlete with most medals
+print(athlete.value_counts().index[0]) # PHELPS, Michael
