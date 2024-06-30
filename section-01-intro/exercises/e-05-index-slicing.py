@@ -4,7 +4,7 @@ cars = pd.read_csv("cars.csv")
 
 # inspect
 print(cars)
-print(cars.info())
+cars.info()
 print("INDEX: ", cars.index)
 
 # selecting columns
